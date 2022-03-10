@@ -32,7 +32,9 @@ dependencies:
   video_player: ^2.2.5
   path_provider: ^2.0.5
   permission_handler: ^8.3.0
-
+  http:
+  dio:
+  path:
 dev_dependencies:
   flutter_test:
     sdk: flutter
