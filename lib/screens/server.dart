@@ -25,12 +25,19 @@ class _ListDemoState extends State<ListDemo> {
         filename: fileName,
       ),
     });
-
-    Dio dio = new Dio();
+    
+    BaseOptions options = new BaseOptions(
+          baseUrl: "http://103.153.75.195:5000",
+          receiveDataWhenStatusError: true,
+          connectTimeout: 150*1000, // 150 seconds
+          receiveTimeout: 300*1000 // 300 seconds
+    );
+    
+    Dio dio = new Dio(options);
 
     Response response =
-    await dio.post("http://192.168.xx.xx:8000/predict/image", data: data);
-
+    await dio.post("/api/v2/captionme", data: data);
+    
     return (response.data as List);
   }
 
