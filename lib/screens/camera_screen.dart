@@ -88,6 +88,7 @@ class _CameraScreenState extends State<CameraScreen>
         _startVideoPlayer();
       } else {
         _imageFile = File('${directory.path}/$recentFileName');
+        
         _videoFile = null;
       }
 

@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
 class ListDemo extends StatefulWidget {
-  final File image;
-
-  ListDemo({required this.image});
+  final File imageFile;
+  final List<File> fileList;
+  ListDemo({required this.imageFile,
+    required this.fileList,});
 
   @override
   _ListDemoState createState() {
@@ -50,10 +51,11 @@ class _ListDemoState extends State<ListDemo> {
           leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.of(context).pop()),
-          title: Text("Result"),
+          title: Text("Hellooo"),
         ),
         body: new FutureBuilder<dynamic>(
-          future: uploadImage(widget.image),
+          future: uploadImage(widget.imageFile),
+
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             switch (snapshot.connectionState) {
               case ConnectionState.none:
