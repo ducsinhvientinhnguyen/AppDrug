@@ -1,29 +1,3 @@
-# Flutter Camera Demo
-
-A full-fledged camera app built with Flutter using the [camera](https://pub.dev/packages/camera) package. You can even add custom features to this app and customize the user interface to match your app’s design palette.
-
-![](screenshots/flutter_camera_demo.png)
-
-The app contains most of the basic camera features, including:
-
-- Capture quality selector
-- Zoom control
-- Exposure control
-- Flash mode selector
-- Button for flipping the camera — rear cam to front cam and vice versa
-- Button for capturing an image
-- Toggle for shifting from image mode to video mode
-- Video mode controls — start, pause, resume, stop
-- Last captured image or video preview
-- Retrieve the image/video files
-
-## Packages
-
-The packages that are used to build this app are as follows, add them to your `pubspec.yaml` file:
-
-- [camera](https://pub.dev/packages/camera): provides cross-platform APIs for implementing the camera functionalities
-- [video_player](https://pub.dev/packages/video_player): for previewing the captured videos
-- [path_provider](https://pub.dev/packages/path_provider): for storing the images or videos inside a directory from where they can be easily accessed
 
 ## License
 
