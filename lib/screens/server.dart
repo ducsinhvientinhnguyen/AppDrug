@@ -43,7 +43,7 @@ class _ListDemoState extends State<ListDemo> {
     String k = response.data as String;
     Map<String, dynamic> dataplus = json.decode(k);
     //dataplus.keys.toList();
-    final a = dataplus.values.toList()[1].removeAt(0);
+
     return (dataplus.values.toList()[1]);
   }
 
